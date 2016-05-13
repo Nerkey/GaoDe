@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       >
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="15dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:text="Small Text"
+            android:visibility="visible" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@+id/time"
+            >
+
+
+            <ImageView
+                android:id="@+id/iv_send_fail"
+                style="?android:attr/progressBarStyleSmall"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:scaleType="centerInside"
+                android:src="@drawable/em_login_error_icon"
+                />
+            <TextView
+                android:id="@+id/content"
+                android:layout_weight="5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/namePhoto"
+                android:background="@drawable/message_chat_list_item_send_bg_default"
+                android:padding="10dp"
+                android:text="New1111fsdfsafsafssdfdsafsafasdfsdfsdsfsdafsadsdfsfsdafsdfsdfsaddafaf5555881dddd11ggggggg111"
+                android:textSize="15sp" />
+            <ProgressBar
+                android:id="@+id/progress_bar"
+
+                style="?android:attr/progressBarStyleSmall"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_toLeftOf="@+id/content"
+                android:visibility="invisible" />
+
+            <com.github.siyamed.shapeimageview.RoundedImageView
+                android:id="@+id/namePhoto"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/messaging_user"
+                app:siBorderColor="#fff"
+                app:siBorderWidth="0dp"
+                app:siRadius="10dp" />
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+</LinearLayout>
