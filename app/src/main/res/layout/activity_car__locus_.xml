@@ -1,0 +1,77 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.locationserve.CarLocusActivity">
+
+    <com.example.qu.gaode.OBDMapView
+        android:id="@+id/bmapView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/biankuang"
+
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:layout_centerVertical="true"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:id="@+id/imgbtnhistory"
+                android:layout_marginRight="16dp"
+                android:background="@drawable/gps_playback"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_toLeftOf="@id/imgbtnhistory"
+                android:textSize="14dp"
+                android:singleLine="false"
+                android:layout_marginTop="6dp"
+                android:id="@+id/street"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="left|top"/>
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="12dp"
+                android:layout_toLeftOf="@id/imgbtnhistory"
+                android:layout_below="@id/street"
+                android:paddingTop="1dp"
+                android:singleLine="true"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="left|bottom"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:id="@+id/state"
+                android:textSize="12dp"
+                android:textColor="#5A8F13"
+                android:layout_below="@+id/time"
+                android:layout_marginBottom="6dp"
+                android:layout_alignLeft="@+id/time"
+                android:layout_alignStart="@+id/time"
+                android:layout_toLeftOf="@+id/imgbtnhistory"
+                android:layout_toStartOf="@+id/imgbtnhistory"/>
+        </RelativeLayout>
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="cityArray">
+        <item>正常速度</item>
+        <item>2X速度</item>
+        <item>4X速度</item>
+    </string-array>
+</resources>
